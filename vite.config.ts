@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [react()],
   // IMPORTANT: Change this to your repository name for GitHub Pages deployment
   // For example, if your repo is https://github.com/user/my-repo, set base to '/my-repo/'
-  base: '/<YOUR_REPO_NAME>/', 
+  base: '/parajara-junior-website/', 
 })
