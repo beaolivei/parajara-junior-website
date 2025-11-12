@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
             </a>
           </div>
           <div className="flex-1 max-w-md">
-             <img src="https://i.ibb.co/L5T8QkM/parajara-4.jpg" alt="Parajara Moraes Alves Júnior em uma cadeira" className="rounded-lg shadow-2xl w-full" />
+             <img src="https://i.ibb.co/FLHvJqDL/Gemini-Generated-Image-8kryvv8kryvv8kry.png" alt="Parajara Moraes Alves Júnior em uma cadeira" className="rounded-lg shadow-2xl w-full" />
           </div>
         </div>
       </div>

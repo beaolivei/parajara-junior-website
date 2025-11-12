@@ -47,8 +47,8 @@ const Services: React.FC = () => {
     <section id="servicos" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800">Nossos Serviços</h2>
-          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Oferecemos soluções completas e especializadas para garantir a saúde financeira e a conformidade do seu agronegócio.</p>
+          <h2 className="text-4xl font-bold text-gray-800">O que eu faço</h2>
+          <p className="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">Ofereço soluções completas e especializadas para garantir a saúde financeira e a conformidade do seu agronegócio.</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (

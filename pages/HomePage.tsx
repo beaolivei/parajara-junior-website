@@ -5,12 +5,18 @@ import About from '../components/About';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
 import Contact from '../components/Contact';
+import Blog from '../components/Blog';
+import { BlogPost } from '../types';
 
-const HomePage: React.FC = () => {
+interface HomePageProps {
+  latestPosts: BlogPost[];
+}
+
+const HomePage: React.FC<HomePageProps> = ({ latestPosts }) => {
   // This effect handles smooth scrolling for homepage anchors
   useEffect(() => {
     const hash = window.location.hash;
-    if (hash) {
+    if (hash && !hash.startsWith('#/')) {
       const id = hash.replace('#', '');
       const element = document.getElementById(id);
       if (element) {
@@ -27,6 +33,7 @@ const HomePage: React.FC = () => {
       <Hero />
       <About />
       <Services />
+      <Blog posts={latestPosts} />
       <Testimonials />
       <Contact />
     </>

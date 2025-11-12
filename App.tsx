@@ -41,12 +41,12 @@ const App: React.FC = () => {
 
   const renderPage = () => {
     if (isLoading) {
-      return <div className="text-center py-40 min-h-screen">Carregando...</div>;
+      return <div className="flex justify-center items-center min-h-screen">Carregando...</div>;
     }
 
     if (route.startsWith('#/blog/')) {
-      const postId = parseInt(route.replace('#/blog/', ''), 10);
-      const post = blogPosts.find(p => p.id === postId);
+      const slug = route.replace('#/blog/', '');
+      const post = blogPosts.find(p => p.slug === slug);
       if (post) {
         return <BlogPostPage post={post} />;
       }
@@ -57,8 +57,8 @@ const App: React.FC = () => {
       return <BlogListPage posts={blogPosts} />;
     }
 
-    // Default to home page for any other hash
-    return <HomePage />;
+    // Default to home page, passing latest posts
+    return <HomePage latestPosts={blogPosts.slice(0, 3)} />;
   };
 
   return (

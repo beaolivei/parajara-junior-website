@@ -5,12 +5,17 @@ interface BlogPostPageProps {
   post: BlogPost;
 }
 
+const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  e.preventDefault();
+  window.location.hash = href;
+};
+
 const BlogPostPage: React.FC<BlogPostPageProps> = ({ post }) => {
   return (
     <div className="bg-white py-20 pt-32 min-h-screen">
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="mb-8">
-          <a href="#/blog" className="text-green-600 hover:text-green-800 font-semibold">&larr; Voltar para o Blog</a>
+          <a href="#/blog" onClick={(e) => handleNavClick(e, '#/blog')} className="text-green-600 hover:text-green-800 font-semibold">&larr; Voltar para o Blog</a>
         </div>
         <article>
           <img src={post.imageUrl} alt={post.title} className="w-full h-auto max-h-[500px] object-cover rounded-lg mb-8 shadow-lg" />

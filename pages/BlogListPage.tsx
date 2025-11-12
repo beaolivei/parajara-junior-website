@@ -5,6 +5,11 @@ interface BlogListPageProps {
   posts: BlogPost[];
 }
 
+const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  e.preventDefault();
+  window.location.hash = href;
+};
+
 const BlogListPage: React.FC<BlogListPageProps> = ({ posts }) => {
   return (
     <section id="blog" className="py-20 pt-32 bg-gray-50 min-h-screen">
@@ -29,7 +34,8 @@ const BlogListPage: React.FC<BlogListPageProps> = ({ posts }) => {
                 </div>
                 <div className="mt-auto">
                   <a 
-                    href={`#/blog/${post.id}`}
+                    href={`#/blog/${post.slug}`}
+                    onClick={(e) => handleNavClick(e, `#/blog/${post.slug}`)}
                     className="font-bold text-green-600 hover:text-green-800 transition-colors"
                   >
                     Leia Mais &rarr;
