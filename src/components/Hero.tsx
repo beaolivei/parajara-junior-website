@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           <div className="md:w-2/5 flex justify-center">
             <div className="relative w-full max-w-sm">
                 <img 
-                  src="https://i.ibb.co/GQKFsHkd/Gemini-Generated-Image-q5ppluq5ppluq5pp.png" 
+                  src="https://drive.google.com/uc?id=1QGB2Pq5TVoOjNTucixviIL3iaA1rLLn0" 
                   alt="Parajara Moraes Alves Júnior em sua mesa de escritório"
                   className="rounded-lg shadow-2xl w-full z-10 relative"
                 />
