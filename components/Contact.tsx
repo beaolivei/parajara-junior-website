@@ -1,5 +1,6 @@
 
 import React from 'react';
+import profile from '../images/profile.png';
 
 const Contact: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const Contact: React.FC = () => {
             </a>
           </div>
           <div className="flex-1 max-w-md">
-             <img src="https://i.ibb.co/FLHvJqDL/Gemini-Generated-Image-8kryvv8kryvv8kry.png" alt="Parajara Moraes Alves Júnior em uma cadeira" className="rounded-lg shadow-2xl w-full" />
+             <img src={profile} alt="Parajara Moraes Alves Júnior em uma cadeira" className="rounded-lg shadow-2xl w-full" />
           </div>
         </div>
       </div>

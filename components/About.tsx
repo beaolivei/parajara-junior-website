@@ -1,4 +1,5 @@
 import React from 'react';
+import mic from '../images/parajara_microfone_palestra.png';
 
 const About: React.FC = () => {
   return (
@@ -6,8 +7,8 @@ const About: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/3">
-            <img 
-              src="../images/parajara_microfone_palestra.png" 
+            <img
+              src={mic}
               alt="Parajara Moraes Alves Júnior"
               className="rounded-lg shadow-2xl w-full"
             />

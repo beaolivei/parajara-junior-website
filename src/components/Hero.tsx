@@ -1,4 +1,5 @@
 import React from 'react';
+import mesa from '../../images/parajara_mesa.png';
 
 const Hero: React.FC = () => {
   return (
@@ -26,8 +27,8 @@ const Hero: React.FC = () => {
           {/* Image Content */}
           <div className="md:w-2/5 flex justify-center">
             <div className="relative w-full max-w-sm">
-                <img 
-                  src="https://drive.google.com/uc?id=1QGB2Pq5TVoOjNTucixviIL3iaA1rLLn0" 
+                <img
+                  src={mesa}
                   alt="Parajara Moraes Alves Júnior em sua mesa de escritório"
                   className="rounded-lg shadow-2xl w-full z-10 relative"
                 />

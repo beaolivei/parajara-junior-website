@@ -7,4 +7,7 @@ export default defineConfig({
   // IMPORTANT: Change this to your repository name for GitHub Pages deployment
   // For example, if your repo is https://github.com/user/my-repo, set base to '/my-repo/'
   base: '/parajara-junior-website/', 
+  build: {
+    outDir: 'docs', // output directly to `docs/` so GitHub Pages (docs folder) can serve it
+  },
 })

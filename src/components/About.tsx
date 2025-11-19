@@ -1,13 +1,14 @@
 import React from 'react';
+import mic from '../../images/parajara_microfone_palestra.png';
 
 const About: React.FC = () => {
   return (
     <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="md:w-1/3">
-            <img 
-              src="https://i.ibb.co/x1bPSgR/parajara-2.jpg" 
+            <div className="md:w-1/3">
+            <img
+              src={mic}
               alt="Parajara Moraes Alves Júnior"
               className="rounded-lg shadow-2xl w-full"
             />
